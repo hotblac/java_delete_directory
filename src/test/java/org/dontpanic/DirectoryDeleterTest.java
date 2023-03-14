@@ -20,7 +20,8 @@ class DirectoryDeleterTest {
     static Stream<Arguments> deleters() {
         return Stream.of(
                 arguments(named("FileDelete", new FileDelete())),
-                arguments(named("FilesDelete", new FilesDelete()))
+                arguments(named("FilesDelete", new FilesDelete())),
+                arguments(named("FileWalkDelete", new FileWalkDelete()))
         );
     }
 
