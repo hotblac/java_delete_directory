@@ -26,7 +26,8 @@ class DirectoryDeleterTest {
                 arguments(named("FilesDelete", new FilesDelete())),
                 arguments(named("FileWalkDelete", new FileWalkDelete())),
                 arguments(named("ApacheCommonsDelete", new ApacheCommonsDelete())),
-                arguments(named("SudoRmDelete", new SudoRmDelete()))
+                arguments(named("SudoRmDelete", new SudoRmDelete())),
+                arguments(named("FileWalkPermissionAndDelete", new FileWalkPermissionCheckAndDelete()))
         );
     }
 
